@@ -1,14 +1,12 @@
 library(dplyr)
-setwd("/home/resham/Desktop/COURSERA/COURSE3R/Project")
-# urlToZip<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-# download.file(urlToZip,"data.zip")
-# 
-# if(file.exists("data.zip"))
-# {
-#         unzip("data.zip")
-# }
-# 
-
+setwd("path/to/your/working/directory")
+urlToZip<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download.file(urlToZip,"data.zip")
+ 
+if(file.exists("data.zip"))
+{
+         unzip("data.zip")
+}
 
 # Reading the training data sets : X, Y and subjects
 
